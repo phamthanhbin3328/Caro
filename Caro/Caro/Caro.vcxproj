@@ -127,17 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Bot.h" />
+    <ClInclude Include="BotPlayer.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="GameSystem.h" />
-    <ClInclude Include="Manager.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BotPlayer.cpp" />
+    <ClCompile Include="CaroTable.cpp" />
+    <ClCompile Include="CaroTable.h" />
     <ClCompile Include="Common.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="FileManager.h" />
     <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="HumanPlayer.cpp" />
+    <ClCompile Include="HumanPlayer.h" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Caro.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

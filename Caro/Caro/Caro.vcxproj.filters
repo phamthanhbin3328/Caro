@@ -13,21 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\PlayerControl">
+      <UniqueIdentifier>{3637eeae-b97b-4304-8818-d3c1b79fc395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PlayerControl">
+      <UniqueIdentifier>{5c7f2853-7050-48c5-99e8-74887bfacbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CaroTableControl">
+      <UniqueIdentifier>{c4378b0f-0708-4a3f-8344-8a1def3f4a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameSystemControl">
+      <UniqueIdentifier>{57822817-40ec-4f9c-8bb3-c96ac13c7a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameSystemControl">
+      <UniqueIdentifier>{e4b06d5d-94dc-4bbe-9459-ccefda4a924f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CaroTableControl">
+      <UniqueIdentifier>{126b98d0-8d07-4c98-8c14-a2aaaab59881}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\PlayerControl</Filter>
     </ClInclude>
-    <ClInclude Include="Bot.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BotPlayer.h">
+      <Filter>Header Files\PlayerControl</Filter>
     </ClInclude>
-    <ClInclude Include="Manager.h">
+    <ClInclude Include="GameSystem.h">
+      <Filter>Header Files\GameSystemControl</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,11 +56,34 @@
     <ClCompile Include="Common.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HumanPlayer.h">
+      <Filter>Header Files\PlayerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanPlayer.cpp">
+      <Filter>Source Files\PlayerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="CaroTable.h">
+      <Filter>Header Files\CaroTableControl</Filter>
+    </ClCompile>
+    <ClCompile Include="BotPlayer.cpp">
+      <Filter>Source Files\PlayerControl</Filter>
+    </ClCompile>
     <ClCompile Include="GameSystem.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\GameSystemControl</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="CaroTable.cpp">
+      <Filter>Source Files\CaroTableControl</Filter>
     </ClCompile>
+    <ClCompile Include="FileManager.h">
+      <Filter>Header Files\GameSystemControl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files\GameSystemControl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Caro.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
